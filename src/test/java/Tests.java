@@ -10,13 +10,13 @@ public class Tests extends TestBase {
 
     @Test
     void pageTest1(){
-        BankPO bankPO = new BankPO(driver, "https://www.sberbank-ast.ru/");
+        BankPO bankPO = new BankPO(driver);
         bankPO.goTo("Продажи", "Продажа долгов");
     }
 
     @Test
     void pageTest2() {
-        BankPO bankPO = new BankPO(driver, "https://www.sberbank-ast.ru/");
+        BankPO bankPO = new BankPO(driver);
         bankPO.goTo("Обучение", "График семинаров");
     }
 }
