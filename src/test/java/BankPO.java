@@ -19,7 +19,6 @@ public class BankPO {
 
     /** Метод собирает меню страницы из доступных разделов и подразделов */
     void menuCollection() {
-
         /* Предварительная структура меню в виде пар <Название меню, Веб-элемент подменю> */
         Map<String, List<WebElement>> preliminaryMenu = new HashMap<>();
         menuBar.findElements(By.xpath("//li//span"))
