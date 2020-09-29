@@ -13,8 +13,8 @@ public class BankPO {
 
     public BankPO(WebDriver driver) {
         this.driver = driver;
-        driver.get("https://www.sberbank-ast.ru/");
-        menuBar = driver.findElement(By.xpath("//*[@class='master_open_menu']"));
+        this.driver.get("https://www.sberbank-ast.ru/");
+        this.menuBar = driver.findElement(By.xpath("//*[@class='master_open_menu']"));
     }
 
     /** Метод собирает меню страницы из доступных разделов и подразделов */
